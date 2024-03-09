@@ -7,7 +7,7 @@ Enjoy clickbait free news!!
 ## Authors
 
 - [@vaishnavi2403](https://github.com/vaishnavi2403)
-## Contributing
+## Contributions
 
 Contributions are always welcome!
 
