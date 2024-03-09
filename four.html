@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="shortcut icon" type="image/x-icon" href="/uptodatelogo.ico">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .btn btn-primary {
+      height: 15%;
+
+    }
+
+    .card {
+      height: 150%;
+
+    }
+
+    .container:active {
+      background-color: #1b2434;
+    }
+
+    .card-text:active {
+      color: #fafafa;
+    }
+  </style>
+  <title>UpToDate</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<body>
+
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <div class="container">
+    <div class="row content">
+      <div class="card my-4 mx-2" style="width: 18rem">
+        <img src="..." class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title
+            and make up the bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+
+
+      <script>
+        let articlesperpage;
+        let totalpages;
+        console.log("hi");
+        let query = window.location.search.split("?")[1].split("&")[0].split("=")[1];
+        let page = parseInt(window.location.search.split("?")[1].split("&")[1].split("=")[1]);
+        console.log(query, page);
+        const fetchNews = async (query, page) => {
+          let a = await fetch(`/api?q=${query}&apiKey=6b439b65382b4484a2e189412cc23b92`)
+          let r = await a.json();
+          console.log(r);
+          totalpages = Math.ceil(r.totalResults / articlesperpage)
+          pre.href = `/?q=${query}&pageno=${page - 1}`
+          next.href = `/?q=${query}&pageno=${page + 1}`
+          let str = ""
+          for (let item of r.articles) {
+            str = str + `<div class="card my-4 mx-2" style="width: 18rem">
+					<img src="${item.urlToImage}" class="card-img-top" alt="">
+					<div class="card-body">
+						<h5 class="card-title">${item.title}</h5>
+						<p class="card-text">${item.description}
+						</p>
+						<a href="${item.url}" target="_blank" class="btn btn-primary">read full news</a>
+					</div>
+				</div>`
+          }
+          document.body.querySelector(".content").innerHTML = str;
+        }
+        fetchNews(query, page)
+      </script>
+      <div class="button">
+        <button class="btn btn-primary" id="pre">
+          Previous page</button>
+        <button class="btn btn-primary" id="next">Next page ></button>
+      </div>
+</body>
+
+</html>
