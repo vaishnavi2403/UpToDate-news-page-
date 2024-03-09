@@ -11,25 +11,21 @@ Enjoy clickbait free news!!
 
 Contributions are always welcome!
 
-See `contributing.md` for ways to get started.
+See `contribution.md` for ways to get started.
 
 Please adhere to this project's `code of conduct`.
 
 ## Demo
+![output](https://github.com/vaishnavi2403/UpToDate-news-page-/assets/78203336/635bde02-ec37-4954-ab7b-f19667fa11f4)
 
-Insert gif or link to demo
 
-![Live Demo](https://github.com/shuence/AdventureSquad/blob/main/images/live%20demo.png)
 
-## Deployment
-
-- [Netlify](https://www.netlify.com/)
 
 ## 🚀 About Me
 
 I'm a full stack developer...
 
-# Hi, I'm Pranali ! 👋
+# Hi, I'm Vaishnavi ! 👋
 
 ## 🛠 Skills
 
@@ -38,7 +34,7 @@ Javascript, HTML, CSS...
 ## 🔗 Links
 
 
-[![linkedin](https://www.linkedin.com/in/pranali-chobe-086826245)
+[![linkedin] (https://www.linkedin.com/in/vaishnavi-sidlambe-471586215/)
 
 
-[![Github](https://github.com/Prannn182)
+[![Github](https://github.com/vaishnavi2403)
