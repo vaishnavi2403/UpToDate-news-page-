@@ -18,7 +18,8 @@ Please adhere to this project's `code of conduct`.
 ## Demo
 ![output](https://github.com/vaishnavi2403/UpToDate-news-page-/assets/78203336/635bde02-ec37-4954-ab7b-f19667fa11f4)
 
-
+## Deploy
+https://bright-marigold-04c86b.netlify.app/
 
 
 ## 🚀 About Me
