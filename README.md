@@ -27,13 +27,13 @@ https://bright-marigold-04c86b.netlify.app/
 
 ## 🚀 About Me
 
-I'm a full stack developer...
+I'm a web developer and exploring different tech stacks.
 
 # Hi, I'm Vaishnavi ! 👋
 
 ## 🛠 Skills
 
-Javascript, HTML, CSS, PHP...
+Javascript, HTML, CSS, PHP, JavaScript, Java, CPP
 
 ## 🔗 Links
 
